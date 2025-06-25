@@ -38,8 +38,7 @@ const App = () => {
       isRead: false,
       isFavorite: false,
     }
-    
-    
+    setBooks(...books, book)
   }
 
   return (

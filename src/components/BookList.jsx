@@ -28,10 +28,10 @@ const BookList = ({books}) => {
             <li>Title: {book.title}</li>
             <li>Author: {book.author}</li>
             <li>{book.image}</li>
-            <li>{book.publishedDate}</li>
-            <li>{book.description}</li>
-            <li>{book.rating}</li>
-            <li>{book.category}</li>
+            <li>published date: {book.publishedDate}</li>
+            <li>Description: {book.description}</li>
+            <li>Rating: {book.rating}</li>
+            <li>Category: {book.category}</li>
       </ul>
       ))}
      
