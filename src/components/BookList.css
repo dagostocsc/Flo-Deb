@@ -1,0 +1,9 @@
+.books {
+    border: 1px solid red;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+li {
+    list-style-type: none;
+}
