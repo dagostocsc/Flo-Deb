@@ -1,4 +1,5 @@
 import React from "react";
+import BookCard from "./BookCard";
 import "./BookList.css"
 
   // const initialBookState = [
@@ -18,23 +19,16 @@ import "./BookList.css"
   // ]
 
 const BookList = ({books}) => {
-  console.log("books--->", books)
   return (
-    <main>
-      <p>this is book list</p>
-      {books.map((book) => (
-         <ul className="books" 
-         key={book.id}>
-            <li>Title: {book.title}</li>
-            <li>Author: {book.author}</li>
-            <li>{book.image}</li>
-            <li>published date: {book.publishedDate}</li>
-            <li>Description: {book.description}</li>
-            <li>Rating: {book.rating}</li>
-            <li>Category: {book.category}</li>
-      </ul>
-      ))}
-     
+    <main className="booklist-container">
+      <h2>My Library</h2>
+      <section className="books-container">
+      {books.length === 0 ? (
+        <p>No books yet</p>
+      ) : (
+        books.map((book) => <BookCard key={book.id} book={book}/>)
+      )}
+      </section>
     </main>
   )
 };

@@ -10,10 +10,10 @@ const App = () => {
   const initialBookState = [
     {
       id: 1,
-      title: "title",
-      author:"author",
-      image: "image",
-      publishedDate: 1986,
+      title: "React For Dummies",
+      author:"Chat GPT",
+      image: "defeated human",
+      publishedDate: 2025,
       description: "description",
       rating: 5,
       category: "drama",
@@ -25,26 +25,18 @@ const App = () => {
   
   const [books, setBooks] = useState(initialBookState)
 
-  const appendBook = (newBook) => {
-    const book = {
-      id: newBook.length + 1,
-      title: newBook.title,
-      author:"author",
-      image: "image",
-      publishedDate: 1986,
-      description: "description",
-      rating: 5,
-      category: "drama",
-      isRead: false,
-      isFavorite: false,
+  const appendBook = (book) => {
+    const newBook = {
+      ...book,
+      id: books.length + 1
     }
-    setBooks(...books, book)
+    setBooks([...books, newBook])
   }
 
   return (
     <div className="app">
       <h1 className="title">React Forms! 📝</h1>
-      <AddBook />
+      <AddBook appendBook = {appendBook}/>
       <BookList books = {books}/>
     </div>
   );

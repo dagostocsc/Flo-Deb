@@ -3,5 +3,26 @@ button {
 }
 
 .addBook-input {
+    background-color: #000000;
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    border: 1px solid yellow;
+    padding: .5rem;
+}
+
+input {
     background-color: black;
+    padding: .5rem;
+}
+
+textarea {
+    background-color: #000000;
+}
+
+select {
+    background-color: #000000;
 }

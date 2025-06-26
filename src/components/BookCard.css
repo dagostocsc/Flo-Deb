@@ -1,0 +1,8 @@
+.books {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    border: 1px solid red;
+    padding: .5rem;
+    border-radius: .5rem;
+}
