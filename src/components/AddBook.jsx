@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React , {useState} from "react";
+import "./AddBook.css"
 
 /**
  * A book should have the following fields:
@@ -14,6 +15,7 @@ import React, { useState } from "react";
  */
 
 const AddBook = () => {
-  return <h1> Hello </h1>
-}
-export default AddBook
+  return <div>AddBook</div>;
+};
+
+export default AddBook;
