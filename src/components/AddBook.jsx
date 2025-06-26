@@ -126,7 +126,7 @@ const handleSubmit = (event) => {
         <input
           name="published-date"
           className="addBook-date"
-          type="number"
+          type="date"
           value={publishedDate}
           placeholder="Published Date"
           onChange={handlePublishedDateChange}
